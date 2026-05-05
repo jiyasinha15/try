@@ -1,23 +1,23 @@
 // Heart  Toggle:::::::
 
-// import { useState } from "react";
+import { useState } from "react";
 
-// function Heart() {
-//   const [liked, setLiked] = useState(false);
+function Heart() {
+  const [liked, setLiked] = useState(false);
 
-//   return (
-//     <div>
-//       <span
-//         style={{ fontSize: "40px", cursor: "pointer" }}
-//         onClick={() => setLiked(!liked)}
-//       >
-//         {liked ? "❤️" : "🤍"}
-//       </span>
-//     </div>
-//   );
-// }
+  return (
+    <div>
+      <span
+        style={{ fontSize: "40px", cursor: "pointer" }}
+        onClick={() => setLiked(!liked)}
+      >
+        {liked ? "❤️" : "🤍"}
+      </span>
+    </div>
+  );
+}
 
-// export default Heart;
+export default Heart;
 
 
 
