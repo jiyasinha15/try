@@ -26,30 +26,30 @@
 
 // fetching data from API::::::::
 
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
-function App() {
-  const [users, setUsers] = useState([]);
+// function App() {
+//   const [users, setUsers] = useState([]);
 
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then(res => res.json())
-      .then(data => setUsers(data));
-  }, []);
+//   useEffect(() => {
+//     fetch("https://jsonplaceholder.typicode.com/users")
+//       .then(res => res.json())
+//       .then(data => setUsers(data));
+//   }, []);
 
-  return (
-    <div>
-      {users.map(user => (
-        <div key={user.id}>
-          <h3>{user.username}</h3>
-          <p>{user.email}</p>
-        </div>
-      ))}
-    </div>
-  );
-}
+//   return (
+//     <div>
+//       {users.map(user => (
+//         <div key={user.id}>
+//           <h3>{user.username}</h3>
+//           <p>{user.email}</p>
+//         </div>
+//       ))}
+//     </div>
+//   );
+// }
 
-export default App;
+// export default App;
 
 
 
